@@ -1,0 +1,16 @@
+{% extends '/layouts/default.twig' %}
+
+{% block content %}
+
+    <h2>Main</h2>
+
+    <ul>
+        {% if session is empty %}
+            <li><a href="/user/auth">Авторизация</a></li>
+        {% else %}
+        <li><a href="/user/home">Личный кабинет</a></li>
+        <li><a href="/user/logout">Выход</a></li>
+        {% endif %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends '/layouts/default.twig' %}
+
+{% block content %}
+    <h2>Auth</h2>
+
+    <ul>
+        <li><a href="/">На главную</a></li>
+    </ul>
+
+    <form method="post">
+        <div>
+            <label for="Login">Login</label><br>
+            <input name="login" type="text" id="Login" placeholder="Enter login">
+        </div>
+        <br>
+        <div>
+            <label for="Password">Пароль</label><br>
+            <input name="password" type="password" id="Password" placeholder="Password">
+        </div>
+        <br>
+        <button type="submit">Вход</button>
+    </form>
+    <br>
+
+    {{ error }}
+{% endblock %}

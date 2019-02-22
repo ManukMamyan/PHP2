@@ -1,0 +1,12 @@
+{% extends '/layouts/default.twig' %}
+
+{% block content %}
+
+    <h2>Welcome {{ session }}</h2>
+
+    <ul>
+        <li><a href="/">На главную</a></li>
+        <li><a href="/user/logout">Выход</a></li>
+    </ul>
+
+{% endblock %}
